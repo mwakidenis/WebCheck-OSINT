@@ -903,17 +903,17 @@ Credit to the following users for contributing to Web-Check
 	<tbody>
 		<tr>
             <td align="center">
-                <a href="https://github.com/Lissy93">
-                    <img src="https://avatars.githubusercontent.com/u/1862727?v=4" width="80;" alt="Lissy93"/>
+                <a href="https://github.com/mwakidenis">
+                    <img src="https://avatars.githubusercontent.com/u/182089390?s=96&v=4" width="80;" alt="mwakidenis"/>
                     <br />
-                    <sub><b>Alicia Sykes</b></sub>
+                    <sub><b>Mwaki Denis</b></sub>
                 </a>
             </td>
             <td align="center">
                 <a href="https://github.com/liss-bot">
                     <img src="https://avatars.githubusercontent.com/u/87835202?v=4" width="80;" alt="liss-bot"/>
                     <br />
-                    <sub><b>Mwaki Denis</b></sub>
+                    <sub><b>mwaki's bot</b></sub>
                 </a>
             </td>
             <td align="center">

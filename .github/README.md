@@ -69,7 +69,7 @@ The aim is to help you easily understand, optimize and secure your website.
 [![Screenshot](https://i.ibb.co/r0jXN6s/web-check.png)](https://github.com/mwakidenis/web-check/tree/master/.github/screenshots)
 
 ### Live Demo
-A hosted version can be accessed at: **[web-check.as93.net](https://web-check.as93.net)**
+A hosted version can be accessed at: **[web-check-by-mwakidenis](https://web-check.as93.net)**
 
 ### Status
 

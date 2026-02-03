@@ -1,0 +1,29 @@
+
+
+name: python script
+
+on:
+  schedule:
+    - cron: "*/16 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-timestamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: refactor python
+        run: |
+          TIMESTAMP_FILE="updates.txt"
+          echo "Last checked: $(date -u +"%Y-%m-%dT%H:%M:%SZ")" > "$TIMESTAMP_FILE"
+          git config user.name "mwakis bot"
+          git config user.email "mwakidenice@gmail.com"
+          git add "$TIMESTAMP_FILE"
+          if ! git diff --cached --quiet; then
+            git commit -m "Update timestamp: $(date -u)"
+          fi
+      - name: Push changes
+        run: git push origin HEAD

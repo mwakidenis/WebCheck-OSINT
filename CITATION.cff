@@ -1,0 +1,24 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: WebCheck-OSINT
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Denis         
+    family-names: Mwaki         
+    email: mwakidenice@gmail.com  
+    # or use the GitHub handle if no name is known:
+    # - name: "mwakidenis"
+repository-code: "https://github.com/mwakidenis/WebCheck-OSINT"
+url: "https://github.com/mwakidenis/WebCheck-OSINT"  # or a project homepage if any
+abstract: WebCheck-OSINT is an open‑source intelligence tool for checking websites.
+keywords:
+  - osint
+  - web
+  - checker
+  - intelligence
+license: unknown   # ← Update with the actual license (e.g., MIT, GPL‑3.0)

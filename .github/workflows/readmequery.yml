@@ -1,0 +1,44 @@
+name: Update README Automation
+
+on:
+  workflow_dispatch:       # manual trigger
+  schedule:
+    - cron: "*/10 * * * *"  # daily at 10:37 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout repository
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # ensures full history for commit
+
+      # 2️⃣ Update README.md timestamp and force commit
+      - name: Force update README timestamp
+        run: |
+          DATE=$(date -u +"%Y-%m-%d %H:%M UTC")
+          TIMESTAMP_LINE="Last updated: $DATE"
+
+          # Replace existing line or append
+          if grep -q "Last updated:" README.md; then
+            sed -i "s/Last updated:.*/$TIMESTAMP_LINE/" README.md
+          else
+            echo "" >> README.md
+            echo "$TIMESTAMP_LINE" >> README.md
+          fi
+
+          # Configure Git identity
+          git config user.name "mwakidenis"
+          git config user.email "mwakidenice@gmail.com"
+
+          # Stage changes
+          git add README.md
+
+          # Always commit to guarantee contribution
+          git commit -m "Auto-update README timestamp: $DATE" --allow-empty
+          git push origin HEAD

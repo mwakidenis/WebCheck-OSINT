@@ -27,6 +27,12 @@
 
 ---
 
+## Stargazers
+
+[![Stargazers](https://api.star-history.com/svg?repos=mwakidenis/WebCheck-OSINT&type=Date)](https://star-history.com/#mwakidenis/WebCheck-OSINT&Date)
+
+---
+
 #### Contents
 
 - **[About](#about)**
